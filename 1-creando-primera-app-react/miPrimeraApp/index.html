@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Primera app de React - Version 17 de react</title>
+</head>
+<body>
+  <!-- Tenemos el contenedor donde se carga la app. -->
+  <div id="app"></div>
+  <!-- Cargamos reactjs y reactDOM develop -->
+  <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+  <!-- Creamos un elemento -->
+  <script>
+    // Accedemos al contenedor de la app:
+    const contenedor = document.getElementById('app');
+    // Creamos un encabezado:
+    const encabezado = React.createElement('h1', {}, 'Hola mundo!!!');
+    // Renderizamos en encabezado dentro del div:
+    ReactDOM.render(encabezado, contenedor);
+  </script>
+</body>
+</html>
