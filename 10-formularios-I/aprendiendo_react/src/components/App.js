@@ -1,23 +1,24 @@
 import React, { useState } from 'react';
 import Usuario from './Usuario';
+import FormularioInicioSesion from './FormularioInicioSesion';
 
 const App = () => {
 
   // Declaramos el estado inicial de la aplicacion usado useState:
-  const [sesion, cambiarEstadoSesion] = useState(true);
+  const [sesion, cambiarEstadoSesion] = useState(false);
 
   const cerrarSesion = () => {
     cambiarEstadoSesion(false);
   }
 
-  const iniciarSesion = () => {
-    cambiarEstadoSesion(true);
-  }
+  // const iniciarSesion = () => {
+  //   cambiarEstadoSesion(true);
+  // }
 
   return (
     <>
       {
-        sesion
+        sesion === true
           ?
           <div>
             <Usuario />
@@ -26,7 +27,8 @@ const App = () => {
           :
           <div>
             <p style={{ color: 'red' }}>No has iniciado sesión...</p>
-            <button onClick={iniciarSesion}>Iniciar Sesión</button>
+            <FormularioInicioSesion />
+            {/* <button onClick={iniciarSesion}>Iniciar Sesión</button> */}
           </div>
       }
     </>
