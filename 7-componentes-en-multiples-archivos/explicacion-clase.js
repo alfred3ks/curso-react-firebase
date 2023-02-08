@@ -81,6 +81,9 @@ Vamos a desglozar mas nuestra app para que veamos como poner componentes dentro 
 Asi vemos como exportar mas de un componente en un archivo.
 
 import React from 'react';
+export { TituloRojo, TituloAzul };
+
+Lo vemos en el codigo a continuación como exportamos dos componentes.
 
 const TituloRojo = () => {
   const nombre = "Alfredo";
