@@ -31,4 +31,9 @@ Asi que ya los podriamos usar:
 
 Ahora ya no vamos a trabajar con un componentes con clases, lo haremos con componentes funcional.
 
+Ahora vamos a ver como cambiar este contador en clase en un contador funcional.
+
+Lo tenemos en component/Contador.js
+
+
 */

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Usuario from './Usuario';
 import FormularioInicioSesion from './FormularioInicioSesion';
 import ContadorClass from './ContadorClass';
+import Contador from './Contador';
 
 const App = () => {
 
@@ -24,6 +25,7 @@ const App = () => {
           <div>
             <Usuario />
             <ContadorClass incrementar={23} disminuir={3} />
+            <Contador increment={7} decrement={5} />
             <button onClick={cerrarSesion}>Cerrar Sesión</button>
           </div>
           :
